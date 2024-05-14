@@ -1,7 +1,6 @@
 ---
 import ImageCard from '../components/ImageCard.astro';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
 import About from '../pages/About.astro'
 import Events from './Events.astro';
@@ -23,6 +22,7 @@ import Events from './Events.astro';
 				<ImageCard imagePath="/src/assets/image_5.png" altText = "pic 1"/>
 	
 			</ul>
+			<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&src=YWNzLmF0LnVoQGdtYWlsLmNvbQ&src=NnVrZmtqNGxjNmJmaWFra2pkbTdmNXUwczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YjNlaGpiMm9sZ3Y0NWJmb3FpbXJnb2wxNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5&color=%233F51B5&color=%23795548" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 			<div class="p-20 m-20 text-center bg-amber-200">Insert Calendar Here</div>	
 		</section>
 
@@ -66,4 +66,5 @@ import Events from './Events.astro';
 		display: flex;
 		flex-direction: row;
 	}
+
 </style>
