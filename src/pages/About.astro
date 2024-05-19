@@ -1,44 +1,47 @@
 ---
 import ImageCard from "../components/ImageCard.astro"
+import AboutAccordion from "../components/AboutAccordion"
+import '../styles/global.css';
 ---
-
-<div class="h-screen bg-[#0057A3]">
-    <h1 class="text-5xl font-bold">About Us</h1>
-    <div class="grid grid-cols-2 gap-10">
-        <div class="text-white m-2">
-            <h2 class="text-2xl font-semibold">Introduction</h1>
-                <p>The ACS student affiliates program offers undergraduate students majoring in chemistry or a related science the support, privileges, and benefits of the largest scientific professional society in the world. There are over 970 chapters at colleges and universities in the U.S. and Puerto Rico.
-            <br/>
-            <br/>
-            Based on an annual report of its activities, the UH chapter was among a group of chapters selected for recognition by the ACS Committee on Education.
-            <br/>
-            <br/>
-            Professor Simon Bott and UH staff member Kim Fletcher, advisors of the chapter, “deserve special commendation,” stated a letter from the ACS Office of the President. “Few faculty members are willing to make the great commitment of time and energy that a successful chapter requires of its advisors. It takes more than exceptional effort to be an award-winning chapter; it takes the nurturing attention of dedicated advisors. Bott’s and Fletcher’s efforts certainly represent the best in undergraduate science education and mentoring around the country."</p>
-        
-        </div>
-        <div class="m-2">
-            <ImageCard imagePath="/src/assets/about.jpg" altText = "intro"/>
-    
-        </div>
-    </div>
-   
-</div>
-<div class="h-screen bg-white">
-    <div class="grid grid-cols-2 gap-10">
-    
-        <div class="m-2">
-            <ImageCard imagePath="/src/assets/mission.png" altText = "mission"/>
-    
-        </div>
-        <div class="text-black m-2">
-            <h2 class="text-2xl font-semibold">Introduction</h1>
-            <h3>Our Mission</h3>
-            <p>The American Chemical Society (ACS) at the University of Houston is a nonprofit organization here to offer an opportunity for students interested in the chemical sciences to acquaint themselves and foster a professional spirit amongst one another. Our mission is to instill professional pride in the chemical sciences and foster an awareness of the responsibilities and challenges of the modern chemist. Most importantly, we employ our resources to promote chemistry to the community at large. We provide insight into graduate programs and various careers relating to the chemical sciences.</p>
-        
-            <h3>Events</h3>
-            <p> 							ACS UH hosts and attends a wide range of volunteering and other  social events throughout the year, including networking, guest speakers,  meetings, and other opportunities to volunteer. If you are interested, click here to see our upcoming events on our agenda.</p>
-        
+<div>
+    <div class="h-screen bg-[#0057A3]">
+        <h1>About Us</h1>
+        <div class="grid grid-cols-2 gap-10">
+            <div class="text-white m-2">
+                <h2>Introduction</h2>
+                    <p>The ACS student affiliates program offers undergraduate students majoring in chemistry or a related science the support, privileges, and benefits of the largest scientific professional society in the world. There are over 970 chapters at colleges and universities in the U.S. and Puerto Rico.
+                <br/>
+                <br/>
+                Based on an annual report of its activities, the UH chapter was among a group of chapters selected for recognition by the ACS Committee on Education.
+                <br/>
+                <br/>
+                Professor Simon Bott and UH staff member Kim Fletcher, advisors of the chapter, “deserve special commendation,” stated a letter from the ACS Office of the President. “Few faculty members are willing to make the great commitment of time and energy that a successful chapter requires of its advisors. It takes more than exceptional effort to be an award-winning chapter; it takes the nurturing attention of dedicated advisors. Bott’s and Fletcher’s efforts certainly represent the best in undergraduate science education and mentoring around the country."</p>
+            
+            </div>
+            <div class="m-2">
+                <ImageCard imagePath="/src/assets/about.jpg" altText = "intro"/>
+            </div>
         </div>
     </div>
-   
+    <div class="h-screen bg-white">
+        <div class="grid grid-cols-2 gap-10">
+        
+            <div class="m-2">
+                <ImageCard imagePath="/src/assets/mission.png" altText = "mission"/>
+            </div>
+            <div class="text-black m-2">
+                <h2>Our Mission</h1>
+                <p>The American Chemical Society (ACS) at the University of Houston is a nonprofit organization here to offer an opportunity for students interested in the chemical sciences to acquaint themselves and foster a professional spirit amongst one another. Our mission is to instill professional pride in the chemical sciences and foster an awareness of the responsibilities and challenges of the modern chemist. Most importantly, we employ our resources to promote chemistry to the community at large. We provide insight into graduate programs and various careers relating to the chemical sciences.</p>
+        
+                <h2 >Events</h1>
+                <p>
+                    ACS UH hosts and attends a wide range of volunteering and other  social events throughout the year, including networking, guest speakers,  meetings, and other opportunities to volunteer. If you are interested, click here to see our upcoming events on our agenda.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="m-2">
+        <AboutAccordion client:visible/>
+    </div>
+    
 </div>

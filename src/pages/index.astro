@@ -4,16 +4,16 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import About from '../pages/About.astro'
 import Events from './Events.astro';
+import '../styles/global.css';
 
 ---
-
 <Layout title="ACS @ UH">
 	<main>
 		<Navbar/>
 		<section id = "home">
 			<div class = "title">
-				<h1>American Chemical Society</h1>
-				<p class="text-center text-base text-blue-600">at the University of Houston</p>
+				<h1 class="text-8xl font-semibold mb-2">American Chemical Society</h1>
+				<h2 class="text-center text-blue-600">at the University of Houston</h2>
 			
 			</div>
 			<ul class="link-card-grid">
@@ -22,10 +22,11 @@ import Events from './Events.astro';
 				<ImageCard imagePath="/src/assets/image_5.png" altText = "pic 1"/>
 	
 			</ul>
-			<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&src=YWNzLmF0LnVoQGdtYWlsLmNvbQ&src=NnVrZmtqNGxjNmJmaWFra2pkbTdmNXUwczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YjNlaGpiMm9sZ3Y0NWJmb3FpbXJnb2wxNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5&color=%233F51B5&color=%23795548" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-			<div class="p-20 m-20 text-center bg-amber-200">Insert Calendar Here</div>	
+			<div class="flex justify-center m-2">
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&src=YWNzLmF0LnVoQGdtYWlsLmNvbQ&src=NnVrZmtqNGxjNmJmaWFra2pkbTdmNXUwczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YjNlaGpiMm9sZ3Y0NWJmb3FpbXJnb2wxNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5&color=%233F51B5&color=%23795548" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+		
 		</section>
-
 		<section id="about">
 			<About/>
 		</section>
@@ -44,16 +45,14 @@ import Events from './Events.astro';
 		scroll-behavior: smooth;
 		scroll-padding-top: 5vmax;
 	}
+
 	main {
 		margin: auto;
 		width: 100%;
 		max-width: 100%;
 		color: black;
 	}
-
 	.title{
-	font-size: 4rem;
-	font-weight: 400;
 	line-height: 1;
 	text-align: center;
 	background-color: #FBBA00;
