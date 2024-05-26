@@ -28,12 +28,15 @@ export default function AboutAccordion() {
                 <p className="text-[#FBBA00] text-xl">
                   UH Chapter Benefits
                 </p>
-                <ul className="border-b-2 pb-2 mb-2 ml-6 border-[#FBBA00] list-disc"> 
-                <li>Receive an awesome free custom-made T-shirt</li>
-                <li>Dozens of volunteering opportunities</li>
-                <li>Ability to attend our Organic Chemistry Final Review</li>
-                <li>Most active members will receive scholarships and awesome prizes</li>
-                </ul>
+                <div className="border-[#FBBA00] border-b-2">
+                  <ul className="pb-2 mb-2 ml-6 list-disc"> 
+                  <li>Receive an awesome free custom-made T-shirt</li>
+                  <li>Dozens of volunteering opportunities</li>
+                  <li>Ability to attend our Organic Chemistry Final Review</li>
+                  <li>Most active members will receive scholarships and awesome prizes</li>
+                  </ul>
+                </div>
+              
                 <p className="text-[#FBBA00] text-xl">
                   National Membership
                 </p>
