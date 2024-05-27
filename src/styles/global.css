@@ -15,3 +15,13 @@
     @apply text-2xl
   }
 }
+
+@font-face {
+  font-family: "PostNoBillsColombo";  
+  src: url("/fonts/PostNoBills/postnobillscolombo-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat"; 
+  src: url("/fonts/Caveat/Caveat-VariableFont_wght.ttf") format("truetype");
+}

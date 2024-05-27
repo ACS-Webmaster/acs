@@ -10,7 +10,7 @@ export default function AboutAccordion() {
   return (
     <Accordion defaultExpandedKeys={["1"]} selectionMode="multiple" variant="shadow" className="gap-1">
       <AccordionItem key="1" aria-label="Accordion 1" title="Membership">
-       <div className="bg-[#0057A3] p-4 text-white">
+       <div className="bg-[#0057A3] p-4 text-white text">
         <div className="grid grid-cols-2 gap-10">
             <div>
               <p className="text-[#FBBA00] text-xl">
@@ -61,7 +61,7 @@ export default function AboutAccordion() {
        </div>
       </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Officers">
-      <div>
+      <div className="text">
         <div className="flex flex-row justify-center">
           <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
         </div>
@@ -75,12 +75,12 @@ export default function AboutAccordion() {
   
       </AccordionItem>
       <AccordionItem key="3" aria-label="Accordion 3" title="Office Hours">
-        <div className="bg-[#0057A3] p-4 text-white">
+        <div className="bg-[#0057A3] p-4 text-white text">
           <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMZCvMuwypdF4sDaPJF0nRrlwm-qfQdcN6cvb_GDeXn75Yinse-Efki8RlFEgH3svOVg1ftNg1Omfb/pubhtml?gid=1097725347&amp;single=true&amp;widget=true&amp;headers=false" className="w-full h-screen"></iframe>
         </div>
       </AccordionItem>
       <AccordionItem key="4" aria-label="Accordion 4" title="Contact Us">
-        <div className="flex flex-col gap-3 p-2">
+        <div className="flex flex-col gap-3 p-2 text">
           <div className="flex flex-row justify-between">
             <div className="border-[#0057A3] border-l-4 pl-3">
               <h3>Location</h3>

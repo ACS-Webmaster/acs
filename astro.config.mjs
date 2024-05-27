@@ -9,4 +9,9 @@ export default defineConfig({
   integrations: [react(), tailwind()],
   output: "server",
   adapter: cloudflare(),
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/noop'
+    }
+  }
 });
