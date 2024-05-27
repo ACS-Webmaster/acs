@@ -6,7 +6,7 @@ import About from '../pages/About.astro'
 import Events from './Events.astro';
 import Store from './Store.astro';
 import '../styles/global.css';
-
+import {Image} from "astro:assets";
 ---
 <Layout title="ACS @ UH">
 	<main>
@@ -14,7 +14,7 @@ import '../styles/global.css';
 		<section id = "home">
 			<div class = "title">
 				<div class="image">
-					<img src="/src/assets/image_2.png" alt="logo">
+					<Image src="/src/assets/image_2.png" alt="logo" width="100" height="100">
 				</div>
 				<p class="text-8xl mb-2">American Chemical Society</p>
 				<p class="text-5xl text-center text-blue-600 subtitle">at the University of Houston</p>
@@ -108,9 +108,7 @@ import '../styles/global.css';
         display: flex;
         justify-content: center;
     }
-	.image img {
-        height: 6rem;
-    }
+
 	.subtitle{
 	font-family: "Caveat", cursive;
 	}
