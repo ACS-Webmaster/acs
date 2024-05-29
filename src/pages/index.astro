@@ -14,7 +14,10 @@ import {Image} from "astro:assets";
 		<section id = "home">
 			<div class = "title">
 				<div class="image">
-					<Image src="/src/assets/image_2.png" alt="logo" width="100" height="100">
+					<div class="w-32">
+						<ImageCard imagePath="/src/assets/image_2.png" altText = "logo"/>
+					</div>
+					<!-- <Image src="/src/assets/image_2.png" alt="logo" width="100" height="100"> -->
 				</div>
 				<p class="text-8xl mb-2">American Chemical Society</p>
 				<p class="text-5xl text-center text-blue-600 subtitle">at the University of Houston</p>
