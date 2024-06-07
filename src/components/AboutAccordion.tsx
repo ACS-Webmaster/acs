@@ -1,14 +1,9 @@
-import React from "react";
 import {Accordion, AccordionItem} from "@nextui-org/react";
-import { color } from "framer-motion";
-import ImageCard from "./ImageCard.astro";
 
 export default function AboutAccordion() {
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <Accordion defaultExpandedKeys={["1"]} selectionMode="multiple" variant="shadow" className="gap-1">
+    <Accordion defaultExpandedKeys={["1"]} selectionMode="multiple" variant="shadow">
       <AccordionItem key="1" aria-label="Accordion 1" title="Membership">
        <div className="bg-[#0057A3] p-4 text-white text">
         <div className="grid grid-cols-2 gap-10">
@@ -62,12 +57,27 @@ export default function AboutAccordion() {
       </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Officers">
       <div className="text">
-        <div className="flex flex-row justify-center">
+        {/* <div className="flex flex-row justify-center">
           <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
-        </div>
+        </div> */}
         <div className="grid grid-cols-2">
-          <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
-          <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
+          <div className="flex flex-row">
+            <div className="p-2 m-2 bg-slate-500 w-1/2"></div>
+            <div className="flex flex-col justify-center">
+              <h3>2023-2024</h3>
+            </div>
+          </div>
+          <a href="/officers/18_19">
+            <div className="flex flex-row">
+                <div className="p-2 m-2 w-1/2">
+                    <img src="/src/assets/officers/18-19/IMG_2801.JPG"/>
+                  </div>
+                  <div className="flex flex-col justify-center">
+                    <h3>2018-2019</h3>
+                  </div>
+            </div>  
+          </a>
+        
           <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
           <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
         </div>  
@@ -75,8 +85,8 @@ export default function AboutAccordion() {
   
       </AccordionItem>
       <AccordionItem key="3" aria-label="Accordion 3" title="Office Hours">
-        <div className="bg-[#0057A3] p-4 text-white text">
-          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMZCvMuwypdF4sDaPJF0nRrlwm-qfQdcN6cvb_GDeXn75Yinse-Efki8RlFEgH3svOVg1ftNg1Omfb/pubhtml?gid=1097725347&amp;single=true&amp;widget=true&amp;headers=false" className="w-full h-screen"></iframe>
+        <div className="bg-[#0057A3] p-4 text-white text flex flex-row justify-center">
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMZCvMuwypdF4sDaPJF0nRrlwm-qfQdcN6cvb_GDeXn75Yinse-Efki8RlFEgH3svOVg1ftNg1Omfb/pubhtml?gid=1097725347&amp;single=true&amp;widget=true&amp;headers=false" className="w-3/4 h-screen"></iframe>
         </div>
       </AccordionItem>
       <AccordionItem key="4" aria-label="Accordion 4" title="Contact Us">
@@ -101,7 +111,7 @@ export default function AboutAccordion() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="p-2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.9315083485926!2d-95.34834618897544!3d29.721743174983864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640be514b3a6f47%3A0x72b46ff575b57b2d!2s3585%20Cullen%20Blvd%20%23112%2C%20Houston%2C%20TX%2077004%2C%20USA!5e0!3m2!1sen!2sin!4v1716132691358!5m2!1sen!2sin" width="600" height="450" loading="lazy"></iframe>
           </div>
         </div>

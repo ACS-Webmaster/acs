@@ -1,3 +1,20 @@
-<div>
-    Insert event gallery here
+---
+import '../styles/global.css'; 
+import Page from "../layouts/Page.astro"
+import Navbar from '../components/Navbar.astro';
+---
+<div class="h-screen bg-[rgb(0,87,163)]">
+
+<Page title="ACS Tutoring Room">
+        <Navbar/>
+        <h1 class="heading title">Insert Gallery Here</h1>
+</Page>
 </div>
+
+
+<style>
+    .title{
+        margin-top: 3rem;
+        padding-top: 2rem;
+    }
+</style>

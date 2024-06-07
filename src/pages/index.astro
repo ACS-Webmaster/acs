@@ -12,12 +12,16 @@ import {Image} from "astro:assets";
 	<main>
 		<Navbar/>
 		<section id = "home">
+			<div class="flex justify-center mt-14">
+				<div class="w-32">
+					<ImageCard imagePath="/src/assets/image_2.1.png" altText = "logo first half"/>
+				</div>
+			</div>
 			<div class = "title">
-				<div class="image">
+				<div class="flex justify-center">
 					<div class="w-32">
-						<ImageCard imagePath="/src/assets/image_2.png" altText = "logo"/>
+						<ImageCard imagePath="/src/assets/image_2.2.png" altText = "logo first half"/>
 					</div>
-					<!-- <Image src="/src/assets/image_2.png" alt="logo" width="100" height="100"> -->
 				</div>
 				<p class="text-8xl mb-2">American Chemical Society</p>
 				<p class="text-5xl text-center text-blue-600 subtitle">at the University of Houston</p>
@@ -28,10 +32,10 @@ import {Image} from "astro:assets";
 				<ImageCard imagePath="/src/assets/image_5.png" altText = "pic 1"/>
 	
 			</ul>
-			<div class="flex justify-center m-2">
-				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&src=YWNzLmF0LnVoQGdtYWlsLmNvbQ&src=NnVrZmtqNGxjNmJmaWFra2pkbTdmNXUwczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YjNlaGpiMm9sZ3Y0NWJmb3FpbXJnb2wxNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5&color=%233F51B5&color=%23795548" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			<div class="m-4">
+				<script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
+				<div class="smgc-calendar-placeholder" id="smgc-cal-GtkSiamhEUCHLcxyC1Hx"></div>
 			</div>
-			<p class="text-center">fix calendar styling once given permission</p>
 		
 		</section>
 		<section id="about">
@@ -42,7 +46,6 @@ import {Image} from "astro:assets";
 			</section>
 		<section id="tutoring">
 			<h1 class="heading ml-2">Tutoring</h1>
-			<a href="/Tutoring">
 				<p class="m-2">Feeling a little rusty on chemistry? Perhaps lecture was confusing or complicated? Need some extra clarification before an exam? Well that is totally okay! Come to our tutoring room with any and all questions! We have dedicated, enthusiastic, and friendly tutors that will help you answer any questions that you may have. Check our tutoring schedules for times you can drop by!</p>
 <div class="flex flex-row justify-between m-2">
     <div class="border-[#0057A3] border-l-4 pl-3">
@@ -65,6 +68,7 @@ import {Image} from "astro:assets";
     </div>
     
 </div>
+<a href="/Tutoring">
 
                 <button class="border-black border-2 m-2 p-2">
                     More info
@@ -80,7 +84,7 @@ import {Image} from "astro:assets";
 <style>
 	html{
 		scroll-behavior: smooth;
-		scroll-padding-top: 5vmax;
+		scroll-padding-top: 6vmax;
 		overflow-x: hidden;
 	}
 
@@ -97,21 +101,9 @@ import {Image} from "astro:assets";
         text-align: center;
         background-color: #FBBA00;
         padding: 1rem;
-        padding-top: 4rem;
-		margin-top: 6rem;
+        padding-top: 0;
         margin-bottom: 8rem;
-        opacity: 80%;
-        position: relative;
     }
-    .image {
-        position: absolute;
-        top: -15%;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-    }
-
 	.subtitle{
 	font-family: "Caveat", cursive;
 	}

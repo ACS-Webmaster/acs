@@ -1,39 +1,58 @@
 ---
 import '../styles/global.css'; 
 import Tutors from '../components/Tutors';
+import Page from "../layouts/Page.astro"
+import Navbar from '../components/Navbar.astro';
 ---
-
-<h1 class="m-2">ACS Tutoring Room</h1>
-<p class="m-2">Feeling a little rusty on chemistry? Perhaps lecture was confusing or complicated? Need some extra clarification before an exam? Well that is totally okay! Come to our tutoring room with any and all questions! We have dedicated, enthusiastic, and friendly tutors that will help you answer any questions that you may have. Check our tutoring schedules for times you can drop by!</p>
-<div class="flex flex-row justify-between m-2">
-    <div class="border-[#0057A3] border-l-4 pl-3">
-        <h3>Location</h3>
-        <p>
-        <strong>Lamar Fleming, Jr. Building</strong> <br/>
-        University of Houston Department of Chemistry <br/>
-        3585 Cullen Blvd #112, Houston, TX 77004 <br/>
-        Room 218 & 220
-        </p>
-    </div>
-    <div class="border-[#0057A3] border-l-4 pl-3">
-        <h3>Contact Us</h3>
-        <div>
-        <p>
-            E-mail: acs.at.uh@gmail.com <br/>
-            Alternatively, you can also contact us on our Facebook page.
-        </p>
+<Page title="ACS Tutoring Room">
+    <Navbar/>
+    <h1 class="title heading">Tutoring</h1>
+    <div class="text">
+        <p class="m-2">Feeling a little rusty on chemistry? Perhaps lecture was confusing or complicated? Need some extra clarification before an exam? Well that is totally okay! Come to our tutoring room with any and all questions! We have dedicated, enthusiastic, and friendly tutors that will help you answer any questions that you may have. Check our tutoring schedules for times you can drop by!</p>
+        <div class="flex flex-row justify-between m-2">
+            <div class="border-[#0057A3] border-l-4 pl-3">
+                <h3>Location</h3>
+                <p>
+                <strong>Lamar Fleming, Jr. Building</strong> <br/>
+                University of Houston Department of Chemistry <br/>
+                3585 Cullen Blvd #112, Houston, TX 77004 <br/>
+                Room 218 & 220
+                </p>
+            </div>
+            <div class="border-[#0057A3] border-l-4 pl-3">
+                <h3>Contact Us</h3>
+                <div>
+                <p>
+                    E-mail: acs.at.uh@gmail.com <br/>
+                    Alternatively, you can also contact us on our Facebook page.
+                </p>
+                </div>
+            </div>
+            
         </div>
-    </div>
+        
+          <div class="m-2">
+            <h2>Tutor Room Rules</h2>
+            <embed src="src/assets/BASIC_TUTOR_ROOM_RULES_FOR_STUDENTS_AND_TUTORS.pdf" type="application/pdf" width="100%" height="800px" />
+            <Tutors client:visible/>
+            <h2>Become a Tutor</h2>
+                <p class="flex flex-row gap-1">Complete the tutoring application 
+                    <a class="underline" href="https://docs.google.com/forms/d/1MQBULbecTiCGHZnFzXRTifBgKzjTKkSW0gG_BYjqcwQ/edit" target="_blank">
+                        here</a> 
+                </p>
+            <h2>Completed Hours</h2>
+
+        
+            <iframe  width="100%" height="600px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRf4TpB2BTGR1ZGQlrXAVWqk_Y-02Tt0cIopKRYb_g9WPjixlw7tjkZde3lwKbtvVyp_nwZFQocX3CU/pubhtml?gid=617729346&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        </div>
+        
+        
+    </Page>
     
-</div>
-
-  <div class="m-2">
-    <h2>Tutor Room Rules</h2>
-    <embed src="src/assets/BASIC_TUTOR_ROOM_RULES_FOR_STUDENTS_AND_TUTORS.pdf" type="application/pdf" width="100%" height="800px" />
-    <Tutors client:visible/>
-    <h2>Become a Tutor</h2>
-    <p>Insert info here...</p>
-    <h2>Completed Hours</h2>
-    <iframe  width="100%" height="600px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRf4TpB2BTGR1ZGQlrXAVWqk_Y-02Tt0cIopKRYb_g9WPjixlw7tjkZde3lwKbtvVyp_nwZFQocX3CU/pubhtml?gid=617729346&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-</div>
-
+    
+    </div>
+  <style>
+    .title{
+        margin-top: 4rem;
+    }
+  </style>
