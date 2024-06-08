@@ -6,11 +6,14 @@ export default function AboutAccordion() {
     <Accordion defaultExpandedKeys={["1"]} selectionMode="multiple" variant="shadow">
       <AccordionItem key="1" aria-label="Accordion 1" title="Membership">
        <div className="bg-[#0057A3] p-4 text-white text">
-        <div className="grid grid-cols-2 gap-10">
+        <div className="sm:grid sm:grid-cols-2 sm:gap-10">
             <div>
               <p className="text-[#FBBA00] text-xl">
                   Become a Member
                 </p>
+                <div className="sm:hidden m-2 flex-col justify-center">
+                  <img src="/src/assets/IMG_0329.jpg" className="rounded-lg"/>
+                </div>
                 <p className="border-b-2 pb-2 mb-2 border-[#FBBA00] font-light"> 
                 If you are interested in becoming a member, click here to sign up!
                 <br />
@@ -48,8 +51,8 @@ export default function AboutAccordion() {
                   </ul>
                 </p>
             </div>
-            <div className="m-2 flex-col justify-center">
-                <img src="/src/assets/IMG_0329.jpg"/>
+            <div className="hidden m-2 flex-col justify-center">
+                <img src="/src/assets/IMG_0329.jpg" className="rounded-lg"/>
             </div>
 
         </div>
@@ -85,13 +88,13 @@ export default function AboutAccordion() {
   
       </AccordionItem>
       <AccordionItem key="3" aria-label="Accordion 3" title="Office Hours">
-        <div className="bg-[#0057A3] p-4 text-white text flex flex-row justify-center">
-          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMZCvMuwypdF4sDaPJF0nRrlwm-qfQdcN6cvb_GDeXn75Yinse-Efki8RlFEgH3svOVg1ftNg1Omfb/pubhtml?gid=1097725347&amp;single=true&amp;widget=true&amp;headers=false" className="w-3/4 h-screen"></iframe>
+        <div className="bg-[#0057A3] p-4 text-white flex flex-row justify-center">
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMZCvMuwypdF4sDaPJF0nRrlwm-qfQdcN6cvb_GDeXn75Yinse-Efki8RlFEgH3svOVg1ftNg1Omfb/pubhtml?gid=1097725347&amp;single=true&amp;widget=true&amp;headers=false" className="sm:w-3/4 h-screen"></iframe>
         </div>
       </AccordionItem>
       <AccordionItem key="4" aria-label="Accordion 4" title="Contact Us">
-        <div className="flex flex-col gap-3 p-2 text">
-          <div className="flex flex-row justify-between">
+        <div className="flex flex-col gap-3 sm:p-2 text">
+          <div className="flex flex-col gap-2 sm:flex-row sm:gap-0 justify-between">
             <div className="border-[#0057A3] border-l-4 pl-3">
               <h3>Location</h3>
                 <p>

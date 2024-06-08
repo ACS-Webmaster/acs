@@ -2,19 +2,23 @@
 import '../styles/global.css'; 
 import Page from "../layouts/Page.astro"
 import Navbar from '../components/Navbar.astro';
+import MobileNav from '../components/MobileNav';
 ---
 <div class="h-screen bg-[rgb(0,87,163)]">
 
 <Page title="ACS Tutoring Room">
+	<div class="sticky top-0 sm:hidden">
+        <MobileNav client:load/>
+    </div>
+    <div class="hidden sm:block">
         <Navbar/>
-        <h1 class="heading title">Insert Gallery Here</h1>
+    </div>        <h1 class="heading title">Event Gallery</h1>
 </Page>
 </div>
 
 
 <style>
     .title{
-        margin-top: 3rem;
-        padding-top: 2rem;
+        padding-top: 4rem;
     }
 </style>

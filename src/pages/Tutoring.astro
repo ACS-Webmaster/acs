@@ -3,9 +3,15 @@ import '../styles/global.css';
 import Tutors from '../components/Tutors';
 import Page from "../layouts/Page.astro"
 import Navbar from '../components/Navbar.astro';
+import MobileNav from '../components/MobileNav';
 ---
 <Page title="ACS Tutoring Room">
-    <Navbar/>
+	<div class="sticky top-0 sm:hidden">
+        <MobileNav client:load/>
+    </div>
+    <div class="hidden sm:block">
+        <Navbar/>
+    </div>
     <h1 class="title heading">Tutoring</h1>
     <div class="text">
         <p class="m-2">Feeling a little rusty on chemistry? Perhaps lecture was confusing or complicated? Need some extra clarification before an exam? Well that is totally okay! Come to our tutoring room with any and all questions! We have dedicated, enthusiastic, and friendly tutors that will help you answer any questions that you may have. Check our tutoring schedules for times you can drop by!</p>

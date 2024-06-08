@@ -6,18 +6,23 @@ import About from '../pages/About.astro'
 import Events from './Events.astro';
 import Store from './Store.astro';
 import '../styles/global.css';
-import {Image} from "astro:assets";
+import MobileNav from '../components/MobileNav'
 ---
 <Layout title="ACS @ UH">
 	<main>
-		<Navbar/>
+		<div class="sticky top-0 sm:hidden">
+			<MobileNav client:load/>
+		</div>
+		<div class="hidden sm:block">
+			<Navbar/>
+		</div>
 		<section id = "home">
-			<div class="flex justify-center mt-14">
+			<div class="flex justify-center sm:mt-14">
 				<div class="w-32">
 					<ImageCard imagePath="/src/assets/image_2.1.png" altText = "logo first half"/>
 				</div>
 			</div>
-			<div class = "title">
+			<div class = "title sm:mb-32">
 				<div class="flex justify-center">
 					<div class="w-32">
 						<ImageCard imagePath="/src/assets/image_2.2.png" altText = "logo first half"/>
@@ -26,13 +31,16 @@ import {Image} from "astro:assets";
 				<p class="text-8xl mb-2">American Chemical Society</p>
 				<p class="text-5xl text-center text-blue-600 subtitle">at the University of Houston</p>
 			</div>
-			<ul class="link-card-grid">
+			<ul class="flex">
 				<ImageCard imagePath="/src/assets/image_3.png" altText = "pic 1"/>
 				<ImageCard imagePath="/src/assets/image_4.png" altText = "pic 1"/>
-				<ImageCard imagePath="/src/assets/image_5.png" altText = "pic 1"/>
+				<div class="hidden sm:flex">
+					<ImageCard imagePath="/src/assets/image_5.png" altText = "pic 1"/>
+
+				</div>
 	
 			</ul>
-			<div class="m-4">
+			<div class="m-4 h-[500px]">
 				<script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
 				<div class="smgc-calendar-placeholder" id="smgc-cal-GtkSiamhEUCHLcxyC1Hx"></div>
 			</div>
@@ -47,7 +55,7 @@ import {Image} from "astro:assets";
 		<section id="tutoring">
 			<h1 class="heading ml-2">Tutoring</h1>
 				<p class="m-2">Feeling a little rusty on chemistry? Perhaps lecture was confusing or complicated? Need some extra clarification before an exam? Well that is totally okay! Come to our tutoring room with any and all questions! We have dedicated, enthusiastic, and friendly tutors that will help you answer any questions that you may have. Check our tutoring schedules for times you can drop by!</p>
-<div class="flex flex-row justify-between m-2">
+<div class="flex flex-col gap-2 sm:flex-row sm:gap-0 justify-between m-2">
     <div class="border-[#0057A3] border-l-4 pl-3">
         <h3>Location</h3>
         <p>
@@ -82,10 +90,21 @@ import {Image} from "astro:assets";
 </Layout>
 
 <style>
+
 	html{
+		scroll-behavior: smooth;
+		scroll-padding-top: 8vmax;
+		overflow-x: hidden;
+	}
+
+	@media only screen and (min-width: 600px) {
+		html{
 		scroll-behavior: smooth;
 		scroll-padding-top: 6vmax;
 		overflow-x: hidden;
+	}
+
+
 	}
 
 	main {
@@ -102,14 +121,9 @@ import {Image} from "astro:assets";
         background-color: #FBBA00;
         padding: 1rem;
         padding-top: 0;
-        margin-bottom: 8rem;
     }
 	.subtitle{
 	font-family: "Caveat", cursive;
-	}
-	.link-card-grid {
-		display: flex;
-		flex-direction: row;
 	}
 
 </style>
