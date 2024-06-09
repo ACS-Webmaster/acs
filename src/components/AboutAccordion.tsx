@@ -4,7 +4,10 @@ export default function AboutAccordion() {
 
   return (
     <Accordion defaultExpandedKeys={["1"]} selectionMode="multiple" variant="shadow">
-      <AccordionItem key="1" aria-label="Accordion 1" title="Membership">
+      <AccordionItem key="1" 
+      aria-label="Accordion 1" 
+      title="Membership"
+      >
        <div className="bg-[#0057A3] p-4 text-white text">
         <div className="sm:grid sm:grid-cols-2 sm:gap-10">
             <div>
@@ -51,7 +54,7 @@ export default function AboutAccordion() {
                   </ul>
                 </p>
             </div>
-            <div className="hidden m-2 flex-col justify-center">
+            <div className="hidden sm:block m-2 flex-col justify-center">
                 <img src="/src/assets/IMG_0329.jpg" className="rounded-lg"/>
             </div>
 
