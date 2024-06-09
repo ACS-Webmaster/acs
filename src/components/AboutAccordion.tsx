@@ -1,4 +1,5 @@
 import {Accordion, AccordionItem} from "@nextui-org/react";
+import img1 from '../assets/IMG_0329.jpg';
 
 export default function AboutAccordion() {
 
@@ -15,7 +16,7 @@ export default function AboutAccordion() {
                   Become a Member
                 </p>
                 <div className="sm:hidden m-2 flex-col justify-center">
-                <img src="../../src/assets/IMG_0329.jpg" className="rounded-lg"/>
+                <img src={img1.src} className="rounded-lg" alt="membership"/>
                 </div>
                 <p className="border-b-2 pb-2 mb-2 border-[#FBBA00] font-light"> 
                 If you are interested in becoming a member, click here to sign up!
@@ -55,7 +56,7 @@ export default function AboutAccordion() {
                 </p>
             </div>
             <div className="hidden sm:block m-2 flex-col justify-center">
-              <img src="../../src/assets/IMG_0329.jpg" className="rounded-lg"/>
+            <img src={img1.src} className="rounded-lg" alt="membership"/>
             </div>
 
         </div>
