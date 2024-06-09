@@ -5,15 +5,15 @@ import Page from "../layouts/Page.astro"
 import Navbar from '../components/Navbar.astro';
 import MobileNav from '../components/MobileNav';
 ---
-<Page title="ACS Tutoring Room">
+<Page title="Tutoring">
 	<div class="sticky top-0 sm:hidden">
         <MobileNav client:load/>
     </div>
     <div class="hidden sm:block">
         <Navbar/>
     </div>
-    <h1 class="title heading">Tutoring</h1>
-    <div class="text">
+    <h1 class="title heading sm:p-2">Tutoring</h1>
+    <div class="text sm:p-2">
         <p class="m-2">Feeling a little rusty on chemistry? Perhaps lecture was confusing or complicated? Need some extra clarification before an exam? Well that is totally okay! Come to our tutoring room with any and all questions! We have dedicated, enthusiastic, and friendly tutors that will help you answer any questions that you may have. Check our tutoring schedules for times you can drop by!</p>
         <div class="flex flex-row justify-between m-2">
             <div class="border-[#0057A3] border-l-4 pl-3">
@@ -36,27 +36,31 @@ import MobileNav from '../components/MobileNav';
             </div>
             
         </div>
-        
+        <img src="/src/assets/polygon-scatter-haikei.svg" alt="svg" class="w-full">
+
           <div class="m-2">
             <h2>Tutor Room Rules</h2>
             <embed src="src/assets/BASIC_TUTOR_ROOM_RULES_FOR_STUDENTS_AND_TUTORS.pdf" type="application/pdf" width="100%" height="800px" />
             <Tutors client:visible/>
+            <div class='border-[#0057A3] border-t-3 mt-8 mb-8'></div>
+
             <h2>Become a Tutor</h2>
                 <p class="flex flex-row gap-1">Complete the tutoring application 
                     <a class="underline" href="https://docs.google.com/forms/d/1MQBULbecTiCGHZnFzXRTifBgKzjTKkSW0gG_BYjqcwQ/edit" target="_blank">
                         here</a> 
                 </p>
+                
             <h2>Completed Hours</h2>
 
         
             <iframe  width="100%" height="600px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRf4TpB2BTGR1ZGQlrXAVWqk_Y-02Tt0cIopKRYb_g9WPjixlw7tjkZde3lwKbtvVyp_nwZFQocX3CU/pubhtml?gid=617729346&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
         </div>
         
-        
+    </div>
+
     </Page>
     
     
-    </div>
   <style>
     .title{
         margin-top: 4rem;
