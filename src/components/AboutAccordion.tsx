@@ -1,5 +1,6 @@
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import img1 from '../assets/IMG_0329.jpg';
+import officers18 from '../assets/officers/18-19/IMG_2801.jpg'
 
 export default function AboutAccordion() {
 
@@ -77,7 +78,7 @@ export default function AboutAccordion() {
           <a href="/officers/18_19">
             <div className="flex flex-row">
                 <div className="p-2 m-2 w-1/2">
-                    <img src="/src/assets/officers/18-19/IMG_2801.JPG"/>
+                    <img src={officers18.src}/>
                   </div>
                   <div className="flex flex-col justify-center">
                     <h3>2018-2019</h3>

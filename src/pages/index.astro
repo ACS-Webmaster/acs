@@ -7,6 +7,9 @@ import Events from './Events.astro';
 import Store from './Store.astro';
 import '../styles/global.css';
 import MobileNav from '../components/MobileNav'
+import svg1 from '../assets/wave-haikei6.svg'
+import svg2 from '../assets/wave-haikei3.svg'
+
 ---
 <Layout title="ACS @ UH">
 	<main>
@@ -44,7 +47,7 @@ import MobileNav from '../components/MobileNav'
 				<script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
 				<div class="smgc-calendar-placeholder" id="smgc-cal-GtkSiamhEUCHLcxyC1Hx"></div>
 			</div>
-			<img src="/src/assets/wave-haikei3.svg" alt="svg" class="w-full">
+			<img src={svg2.src} alt="svg" class="w-full">
 
 		
 		</section>
@@ -86,7 +89,7 @@ import MobileNav from '../components/MobileNav'
 				</a>
 			</div>
 
-			<img src="/src/assets/wave-haikei6.svg" alt="svg" class="w-full">
+			<img src={svg1.src} alt="svg" class="w-full">
 		</section>
 		<section id="store">
 			<Store/>

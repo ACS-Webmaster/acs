@@ -4,6 +4,7 @@ import Tutors from '../components/Tutors';
 import Page from "../layouts/Page.astro"
 import Navbar from '../components/Navbar.astro';
 import MobileNav from '../components/MobileNav';
+import svg6 from '../assets/polygon-scatter-haikei.svg'
 ---
 <Page title="Tutoring">
 	<div class="sticky top-0 sm:hidden">
@@ -36,7 +37,7 @@ import MobileNav from '../components/MobileNav';
             </div>
             
         </div>
-        <img src="/src/assets/polygon-scatter-haikei.svg" alt="svg" class="w-full">
+        <img src={svg6.src} alt="svg" class="w-full">
 
           <div class="m-2">
             <h2>Tutor Room Rules</h2>

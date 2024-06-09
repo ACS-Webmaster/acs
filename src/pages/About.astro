@@ -5,6 +5,10 @@ import '../styles/global.css';
 import intro from "../assets/about.jpg"
 import mission from "../assets/mission.png"
 import { Image } from 'astro:assets';
+import svg2 from '../assets/wave-haikei4.svg'
+import svg3 from '../assets/wave-haikei1.svg'
+import svg4 from '../assets/stacked-waves-haikei1.svg'
+
 ---
 <div>
     <div class="h-full bg-[rgb(0,87,163)] mb-0">
@@ -34,8 +38,8 @@ import { Image } from 'astro:assets';
             </div>
         </div>
     </div>
-    <img src="/src/assets/stacked-waves-haikei.svg" alt="svg" class="sm:hidden w-full">
-    <img src="/src/assets/stacked-waves-haikei1.svg" alt="svg" class="hidden sm:block w-full">
+    <img src={svg3.src} alt="svg" class="sm:hidden w-full">
+    <img src={svg4.src} alt="svg" class="hidden sm:block w-full">
     <div class="h-full bg-white text">
         <div class="sm:grid sm:grid-cols-2 sm:gap-10">
         
@@ -63,7 +67,7 @@ import { Image } from 'astro:assets';
     <div class="m-2">
         <AboutAccordion client:visible/>
     </div>
-    <img src="/src/assets/wave-haikei4.svg" alt="svg" class="w-full">
+    <img src={svg2.src} alt="svg" class="w-full">
 
     
 </div>
