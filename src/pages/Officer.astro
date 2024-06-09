@@ -1,0 +1,39 @@
+---
+import group18 from "../assets/officers/18-19/IMG_2801.jpg"
+import random1 from "../assets/image_3.png"
+import random2 from "../assets/image_4.png"
+import random3 from "../assets/image_5.png"
+import { Image } from "astro:assets";
+import Page from "../layouts/Page.astro"
+import '../styles/global.css';
+---
+
+<Page title="Officers">
+    <h2 class="heading ml-2 mt-8">Officers</h1>
+    <div class="text m-4">
+        <div class="grid grid-cols-2">
+          <div class="flex flex-row">
+            <div class="p-2 m-2 bg-slate-500 w-1/2"></div>
+            <div class="flex flex-col justify-center">
+              <h3>2023-2024</h3>
+            </div>
+          </div>
+          <a href="/officers/18_19">
+            <div class="flex flex-row">
+                <div class="p-2 m-2 w-1/2">
+                    <Image src={group18} alt="officer2" transition:name="18_19"/>
+                </div>
+                  <div class="flex flex-col justify-center">
+                    <h3>2018-2019</h3>
+                  </div>
+            </div>  
+          </a>
+        
+          <div class="p-2 m-2 bg-slate-500 w-36 h-36"></div>
+          <div class="p-2 m-2 bg-slate-500 w-36 h-36"></div>
+        </div>  
+      </div>
+
+
+</Page>
+

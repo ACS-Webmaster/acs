@@ -8,6 +8,7 @@ import { Image } from 'astro:assets';
 import svg2 from '../assets/wave-haikei4.svg'
 import svg3 from '../assets/wave-haikei1.svg'
 import svg4 from '../assets/stacked-waves-haikei1.svg'
+import Officer from "./Officer.astro";
 
 ---
 <div>
@@ -67,6 +68,7 @@ import svg4 from '../assets/stacked-waves-haikei1.svg'
     <div class="m-2">
         <AboutAccordion client:visible/>
     </div>
+    <Officer/>
     <img src={svg2.src} alt="svg" class="w-full">
 
     

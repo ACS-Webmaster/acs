@@ -63,41 +63,12 @@ export default function AboutAccordion() {
         </div>
        </div>
       </AccordionItem>
-      <AccordionItem key="2" aria-label="Accordion 2" title="Officers">
-      <div className="text">
-        {/* <div className="flex flex-row justify-center">
-          <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
-        </div> */}
-        <div className="grid grid-cols-2">
-          <div className="flex flex-row">
-            <div className="p-2 m-2 bg-slate-500 w-1/2"></div>
-            <div className="flex flex-col justify-center">
-              <h3>2023-2024</h3>
-            </div>
-          </div>
-          <a href="/officers/18_19">
-            <div className="flex flex-row">
-                <div className="p-2 m-2 w-1/2">
-                    <img src={officers18.src}/>
-                  </div>
-                  <div className="flex flex-col justify-center">
-                    <h3>2018-2019</h3>
-                  </div>
-            </div>  
-          </a>
-        
-          <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
-          <div className="p-2 m-2 bg-slate-500 w-36 h-36"></div>
-        </div>  
-      </div>
-  
-      </AccordionItem>
-      <AccordionItem key="3" aria-label="Accordion 3" title="Office Hours">
+      <AccordionItem key="2" aria-label="Accordion 2" title="Office Hours">
         <div className="bg-[#0057A3] p-4 text-white flex flex-row justify-center">
           <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMZCvMuwypdF4sDaPJF0nRrlwm-qfQdcN6cvb_GDeXn75Yinse-Efki8RlFEgH3svOVg1ftNg1Omfb/pubhtml?gid=1097725347&amp;single=true&amp;widget=true&amp;headers=false" className="sm:w-3/4 h-screen"></iframe>
         </div>
       </AccordionItem>
-      <AccordionItem key="4" aria-label="Accordion 4" title="Contact Us">
+      <AccordionItem key="3" aria-label="Accordion 3" title="Contact Us">
         <div className="flex flex-col gap-3 sm:p-2 text">
           <div className="flex flex-col gap-2 sm:flex-row sm:gap-0 justify-between">
             <div className="border-[#0057A3] border-l-4 pl-3">

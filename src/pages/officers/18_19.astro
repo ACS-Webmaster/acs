@@ -10,27 +10,30 @@ import pic7 from "../../assets/officers/18-19/IMG_2789.jpg"
 import pic8 from "../../assets/officers/18-19/IMG_2792.jpg"
 import pic9 from "../../assets/officers/18-19/IMG_2801.jpg"
 import pic10 from "../../assets/officers/18-19/IMG_2948.jpg"
-
-
-
+import Page from "../../layouts/Page.astro"
 import '../../styles/global.css';
 
 ---
+<Page title="18-19 Officers">
 
-<h1>2018-2019 Officers</h1>
-<div class="p-4">
-    <Image src={pic9} alt="officer2"/>
-    <div class="grid grid-cols-3 gap-3 m-2">
-        <Image src={pic1} alt="officer1"/>
-        <Image src={pic2} alt="officer2"/>
-        <Image src={pic3} alt="officer2"/>
-        <Image src={pic4} alt="officer2"/>
-        <Image src={pic5} alt="officer2"/>
-        <Image src={pic6} alt="officer2"/>
-        <Image src={pic7} alt="officer2"/>
-        <Image src={pic8} alt="officer2"/>
-        <Image src={pic10} alt="officer2"/>
+    <div class="p-4">
+        <h1 class="heading">2018-2019 Officers</h1>
+        <div class="p-4">
+            <Image src={pic9} alt="officer2" transition:name="18_19" class="w-1/2"/>
+            <div class="grid grid-cols-3 gap-3 m-2">
+                <Image src={pic1} alt="officer1"/>
+                <Image src={pic2} alt="officer2"/>
+                <Image src={pic3} alt="officer2"/>
+                <Image src={pic4} alt="officer2"/>
+                <Image src={pic5} alt="officer2"/>
+                <Image src={pic6} alt="officer2"/>
+                <Image src={pic7} alt="officer2"/>
+                <Image src={pic8} alt="officer2"/>
+                <Image src={pic10} alt="officer2"/>
+            </div>
+        
+        </div>
+        
     </div>
 
-</div>
-
+</Page>
