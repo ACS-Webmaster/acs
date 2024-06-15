@@ -65,7 +65,7 @@ export default function AboutAccordion() {
       </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Office Hours">
         <div className="bg-[#0057A3] p-4 text-white flex flex-row justify-center">
-          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMZCvMuwypdF4sDaPJF0nRrlwm-qfQdcN6cvb_GDeXn75Yinse-Efki8RlFEgH3svOVg1ftNg1Omfb/pubhtml?gid=1097725347&amp;single=true&amp;widget=true&amp;headers=false" className="sm:w-3/4 h-screen"></iframe>
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSMZCvMuwypdF4sDaPJF0nRrlwm-qfQdcN6cvb_GDeXn75Yinse-Efki8RlFEgH3svOVg1ftNg1Omfb/pubhtml?gid=1097725347&amp;single=true&amp;widget=true&amp;headers=false" className="w-full sm:w-3/4 h-screen"></iframe>
         </div>
       </AccordionItem>
       <AccordionItem key="3" aria-label="Accordion 3" title="Contact Us">

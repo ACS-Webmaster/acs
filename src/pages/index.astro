@@ -9,6 +9,7 @@ import '../styles/global.css';
 import MobileNav from '../components/MobileNav'
 import svg1 from '../assets/wave-haikei6.svg'
 import svg2 from '../assets/wave-haikei3.svg'
+import Officer from './Officer.astro';
 
 ---
 <Layout title="ACS @ UH">
@@ -44,15 +45,18 @@ import svg2 from '../assets/wave-haikei3.svg'
 	
 			</ul>
 			<div class="m-4 h-[500px]">
-				<script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
+				<script type="text/javascript" src="https://stylemygcal.com/widget.js" is:inline></script>
 				<div class="smgc-calendar-placeholder" id="smgc-cal-GtkSiamhEUCHLcxyC1Hx"></div>
 			</div>
-			<img src={svg2.src} alt="svg" class="w-[1000px]">
+			<img src={svg2.src} alt="svg" class="hidden sm:block sm:w-full">
 
 		
 		</section>
 		<section id="about">
 			<About/>
+		</section>
+		<section id="officer">
+			<Officer/>
 		</section>
 		<section id="events">
 			<Events/>
@@ -83,13 +87,14 @@ import svg2 from '../assets/wave-haikei3.svg'
 				</div>
 				<a href="/Tutoring">
 				
-								<button class="border-black border-2 m-2 p-2">
+								<button class="border-black border-2 p-2 rounded-lg hover:bg-[#0057A3] hover:text-white duration-300 m-2 p-2">
 									More info
 								</button>
+							
 				</a>
 			</div>
 
-			<img src={svg1.src} alt="svg" class="w-100">
+			<img src={svg1.src} alt="svg" class="hidden sm:block sm:w-full">
 		</section>
 		<section id="store">
 			<Store/>
@@ -133,8 +138,6 @@ import svg2 from '../assets/wave-haikei3.svg'
 	.subtitle{
 	font-family: "Caveat", cursive;
 	}
-	.svg{
-		width: 120%;
-	}
+
 
 </style>

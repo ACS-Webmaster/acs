@@ -5,14 +5,13 @@ import '../styles/global.css';
 import intro from "../assets/about.jpg"
 import mission from "../assets/mission.png"
 import { Image } from 'astro:assets';
-import svg2 from '../assets/wave-haikei4.svg'
 import svg3 from '../assets/stacked-waves-haikei.svg'
 import svg4 from '../assets/stacked-waves-haikei1.svg'
 import Officer from "./Officer.astro";
 
 ---
 <div>
-    <div class="h-full bg-[rgb(0,87,163)] mb-0">
+    <div class="h-full bg-[rgb(0,87,163)] pb-4 sm:pb-0 pt-4 sm:pt-0 ">
         <h1 class="heading ml-2">About Us</h1>
         
         <div class="sm:grid sm:grid-cols-2 sm:gap-10">
@@ -39,7 +38,7 @@ import Officer from "./Officer.astro";
             </div>
         </div>
     </div>
-    <img src={svg3.src} alt="svg" class="sm:hidden w-full">
+    <!-- <img src={svg3.src} alt="svg" class="sm:hidden w-full"> -->
     <img src={svg4.src} alt="svg" class="hidden sm:block w-full">
     <div class="h-full bg-white text">
         <div class="sm:grid sm:grid-cols-2 sm:gap-10">
@@ -68,8 +67,6 @@ import Officer from "./Officer.astro";
     <div class="m-2">
         <AboutAccordion client:visible/>
     </div>
-    <Officer/>
-    <img src={svg2.src} alt="svg" class="w-full">
-
+  
     
 </div>
