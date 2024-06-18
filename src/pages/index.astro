@@ -9,6 +9,7 @@ import '../styles/global.css';
 import MobileNav from '../components/MobileNav'
 import svg1 from '../assets/wave-haikei6.svg'
 import svg2 from '../assets/wave-haikei3.svg'
+import mob1 from '../assets/mobile-wave-haikei.png'
 import Officer from './Officer.astro';
 
 ---
@@ -48,6 +49,7 @@ import Officer from './Officer.astro';
 				<script type="text/javascript" src="https://stylemygcal.com/widget.js" is:inline></script>
 				<div class="smgc-calendar-placeholder" id="smgc-cal-GtkSiamhEUCHLcxyC1Hx"></div>
 			</div>
+			<img src={mob1.src} class="sm:hidden">
 			<img src={svg2.src} alt="svg" class="hidden sm:block sm:w-full">
 
 		
