@@ -7,9 +7,8 @@ import Events from './Events.astro';
 import Store from './Store.astro';
 import '../styles/global.css';
 import MobileNav from '../components/MobileNav'
-import svg1 from '../assets/wave-haikei6.svg'
-import newSvg from "../assets/wave-haikei3.svg?raw"
-import svg2 from '../assets/wave-haikei3.svg'
+import svg1 from '../assets/wave-haikei6.svg?raw'
+import svg2 from "../assets/wave-haikei3.svg?raw"
 import Officer from './Officer.astro';
 
 ---
@@ -50,9 +49,8 @@ import Officer from './Officer.astro';
 				<div class="smgc-calendar-placeholder" id="smgc-cal-GtkSiamhEUCHLcxyC1Hx"></div>
 			</div>
 		
-			<img src={svg2.src} alt="svg" class="hidden sm:block sm:w-full">
-			<div class="sm:hidden mb-0">	<Fragment set:html={newSvg} />
-			</div>
+			<Fragment set:html={svg2} />
+	
 		
 			
 
@@ -99,8 +97,7 @@ import Officer from './Officer.astro';
 							
 				</a>
 			</div>
-
-			<img src={svg1.src} alt="svg" class="hidden sm:block sm:w-full">
+			<Fragment set:html={svg1} />
 		</section>
 		<section id="store">
 			<Store/>

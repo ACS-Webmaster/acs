@@ -5,7 +5,7 @@ const Tutors = () => {
     const [active, setActive] = useState(0);
     return (    
     <div>
-        <div className='border-[#0057A3] border-t-3 mt-12 mb-10'></div>
+        {/* <div className='border-[#0057A3] border-t-3 mt-12 mb-10'></div> */}
 
         <h2>Tutors & Schedule</h2>
         <p className="bg-[#FBBA00] w-fit p-1 mb-2">Notice: Please e-mail us at acs.at.uh@gmail.com if you have any concerns or questions. </p>

@@ -1,6 +1,6 @@
 ---
 import Page from "../layouts/Page.astro"
-import svg5 from '../assets/wave-haikei5.svg'
+import svg5 from '../assets/wave-haikei5.svg?raw'
 ---
 
 <Page title="Events">
@@ -20,7 +20,7 @@ import svg5 from '../assets/wave-haikei5.svg'
         </div>
       
         </div>
-        <img src={svg5.src} alt="svg" class="w-full hidden sm:block">
+        <Fragment set:html={svg5} />
 
 
 </Page>
