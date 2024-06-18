@@ -6,7 +6,7 @@ import random3 from "../assets/image_5.png"
 import { Image } from "astro:assets";
 import Page from "../layouts/Page.astro"
 import '../styles/global.css';
-import svg2 from '../assets/wave-haikei4.svg'
+import svg2 from '../assets/wave-haikei4.svg?raw'
 
 ---
 
@@ -44,5 +44,5 @@ import svg2 from '../assets/wave-haikei4.svg'
 
 
 </Page>
-<img src={svg2.src} alt="svg" class="w-full hidden sm:block">		
+<Fragment set:html={svg2}/>
 
