@@ -10,6 +10,7 @@ import MobileNav from '../components/MobileNav'
 import svg1 from '../assets/wave-haikei6.svg?raw'
 import svg2 from "../assets/wave-haikei3.svg?raw"
 import Officer from './Officer.astro';
+import Footer from '../components/Footer.astro';
 
 ---
 <Layout title="ACS @ UH">
@@ -33,7 +34,7 @@ import Officer from './Officer.astro';
 					</div>
 				</div>
 				<p class="text-8xl mb-2">American Chemical Society</p>
-				<p class="text-5xl text-center text-blue-600 subtitle">at the University of Houston</p>
+				<p class="text-5xl text-center text-[rgb(0,87,163)] subtitle">at the University of Houston</p>
 			</div>
 			<ul class="flex">
 				<ImageCard imagePath="/src/assets/image_3.png" altText = "pic 1"/>
@@ -102,6 +103,10 @@ import Officer from './Officer.astro';
 		<section id="store">
 			<Store/>
 		</section>
+		<div class="flex justify-center bg-[rgb(0,87,163)] text-white">
+			<Footer/>
+		</div>
+	
 	</main>
 </Layout>
 

@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Page from "../layouts/Page.astro"
 import Navbar from '../components/Navbar.astro';
 import MobileNav from '../components/MobileNav';
+import Footer from '../components/Footer.astro';
 ---
 <div class="h-screen bg-[rgb(0,87,163)]">
 
@@ -15,7 +16,11 @@ import MobileNav from '../components/MobileNav';
     </div>       
     <h1 class="title heading sm:p-2 text-white">Event Gallery</h1>
     <h3 class="heading sm:p-2">...</h3>
+    
 </Page>
+</div>
+<div class="flex justify-center bg-[rgb(0,87,163)] text-white">
+    <Footer/>
 </div>
 
 
