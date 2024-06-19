@@ -20,9 +20,9 @@ export default function AboutAccordion() {
                 <img src={img1.src} className="rounded-lg" alt="membership"/>
                 </div>
                 <p className="border-b-2 pb-2 mb-2 border-[#FBBA00] font-light"> 
-                If you are interested in becoming a member, click here to sign up!
+                If you are interested in becoming a member, <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3gG5_lZOiysjRv9AT0dYQFpi6keaG9Apyo9FpAl2p-uPUnQ/viewform?usp=sf_link" className="underline">click here</a> to sign up!
                 <br />
-                <strong>Semester Chapter Membership: </strong>$30.00
+                <strong>Semester Chapter Membership: </strong>$25.00
                 <br />
                 <strong>Yearly Chapter Membership: </strong>$30.00
                 <br />
@@ -34,7 +34,7 @@ export default function AboutAccordion() {
                 <div className="border-[#FBBA00] border-b-2">
                   <ul className="pb-2 mb-2 ml-6 list-disc"> 
                   <li>Receive an awesome free custom-made T-shirt</li>
-                  <li>Dozens of volunteering opportunities</li>
+                  <li>Networking and research opportunities</li>
                   <li>Ability to attend our Organic Chemistry Final Review</li>
                   <li>Most active members will receive scholarships and awesome prizes</li>
                   </ul>
@@ -48,7 +48,6 @@ export default function AboutAccordion() {
                   <br />
                   <strong>National Membership Benefits:</strong>
                   <ul className="list-disc ml-6">
-                    <li>Receive a free comfy ACS blanket</li>
                     <li>  Receive a certificate of National Membership and ACS member handbook in the mail</li>
                     <li>  Benefit from ACS national networks and numerous assets</li>
                     <li>  For more info on ACS National Membership, click here
