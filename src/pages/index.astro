@@ -45,11 +45,16 @@ import Footer from '../components/Footer.astro';
 				</div>
 	
 			</ul>
-			<div class="m-4 flex justify-center">
+			<div class="sm:hidden p-6 flex justify-center">
+				<iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&showPrint=0&title=ACS%20Calendar&mode=AGENDA&showCalendars=0&src=YWNzLmF0LnVoQGdtYWlsLmNvbQ&src=NnVrZmtqNGxjNmJmaWFra2pkbTdmNXUwczhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%233F51B5&color=%233F51B5" style="border-width:0" width="350" height="400" frameborder="0" scrolling="no"></iframe>
+			</div>
+			<div class="hidden sm:block m-4">
 				<!-- <script type="text/javascript" src="https://stylemygcal.com/widget.js" is:inline></script>
 				<div class="smgc-calendar-placeholder" id="smgc-cal-GtkSiamhEUCHLcxyC1Hx"></div> -->
-				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&showPrint=0&title=ACS%20Calendar&src=YWNzLmF0LnVoQGdtYWlsLmNvbQ&color=%233F51B5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>			</div>
-		
+				<iframe src="https://embed.styledcalendar.com/#P7cUPi9eIDhGml4cUxZi" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+				<script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+
+			</div>
 			<Fragment set:html={svg2} />
 	
 		
