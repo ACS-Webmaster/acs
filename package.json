@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.5.10",
     "@astrojs/cloudflare": "^10.1.0",
     "@astrojs/react": "^3.2.0",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
     "@nextui-org/react": "^2.3.6",
     "@types/react": "^18.2.75",
