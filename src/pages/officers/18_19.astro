@@ -1,38 +1,74 @@
 ---
 import { Image } from "astro:assets";
-import pic1 from "../../assets/officers/18-19/IMG_2759.jpg"
-import pic2 from "../../assets/officers/18-19/IMG_2763.jpg"
-import pic3 from "../../assets/officers/18-19/IMG_2776.jpg"
-import pic4 from "../../assets/officers/18-19/IMG_2780.jpg"
-import pic5 from "../../assets/officers/18-19/IMG_2783.jpg"
-import pic6 from "../../assets/officers/18-19/IMG_2786.jpg"
-import pic7 from "../../assets/officers/18-19/IMG_2789.jpg"
-import pic8 from "../../assets/officers/18-19/IMG_2792.jpg"
 import pic9 from "../../assets/officers/18-19/IMG_2801.jpg"
-import pic10 from "../../assets/officers/18-19/IMG_2948.jpg"
 import Page from "../../layouts/Page.astro"
 import '../../styles/global.css';
 import Footer from "../../components/Footer.astro";
+import OfficerCard from "../../components/OfficerCard";
 
 ---
 <Page title="18-19 Officers">
 
     <div class="p-4">
-        <div class="p-3 border-black border-1 w-min rounded-xl cursor-pointer text bg-[rgb(253,220,128)] hover:bg-[rgb(245,204,92)] "><a href="/#officer">Back</a>  
-           </div> 
+       <a href="/#officer"> <div class="p-3 border-black border-1 w-min rounded-xl cursor-pointer text bg-[rgb(253,220,128)] hover:bg-[rgb(245,204,92)] ">Back</div></a>  
         <h1 class="heading">2018-2019 Officers</h1>
         <div class="p-4">
             <Image src={pic9} alt="officer2" transition:name="18_19" class="w-1/2 drop-shadow-2xl"/>
             <div class="grid grid-cols-3 gap-3 m-2">
-                <Image src={pic1} alt="officer1"/>
-                <Image src={pic2} alt="officer2"/>
-                <Image src={pic3} alt="officer2"/>
-                <Image src={pic4} alt="officer2"/>
-                <Image src={pic5} alt="officer2"/>
-                <Image src={pic6} alt="officer2"/>
-                <Image src={pic7} alt="officer2"/>
-                <Image src={pic8} alt="officer2"/>
-                <Image src={pic10} alt="officer2"/>
+                <OfficerCard officer={{
+                    name: 'Aswathy',
+                    title: 'President',
+                    image_path:'/src/assets/officers/18-19/IMG_2759.jpg',
+                    email: 'acs.at.uh@gmail.com'
+                } } />
+                <OfficerCard officer={{
+                    name: 'Taylor Prichard',
+                    title: 'Vice President',
+                    image_path:'/src/assets/officers/18-19/IMG_2763.jpg',
+                    email: 'acs.at.uh@gmail.com'
+                } } />
+                    <OfficerCard officer={{
+                        name: 'Marium',
+                        title: 'Demonstrations Coordinator',
+                        image_path:'/src/assets/officers/18-19/IMG_2776.jpg',
+                        email: 'acs.at.uh@gmail.com'
+                    } } />
+                      <OfficerCard officer={{
+                        name: 'Carla-Cristina',
+                        title: 'Secretary',
+                        image_path:'/src/assets/officers/18-19/IMG_2783.jpg',
+                        email: 'acs.at.uh@gmail.com'
+                    } } />
+                     <OfficerCard officer={{
+                        name: 'Alvin Huynh',
+                        title: 'Web Master',
+                        image_path:'/src/assets/officers/18-19/IMG_2780.jpg',
+                        email: 'acs.at.uh@gmail.com'
+                    } } />
+                        <OfficerCard officer={{
+                            name: 'David Momtaz',
+                            title: 'Academic  Chief',
+                            image_path:'/src/assets/officers/18-19/IMG_2786.jpg',
+                            email: 'acs.at.uh@gmail.com'
+                        } } />
+                 <OfficerCard officer={{
+                    name: 'Taylor Nunley',
+                    title: 'Green Chemistry Chair',
+                    image_path:'/src/assets/officers/18-19/IMG_2789.jpg',
+                    email: 'acs.at.uh@gmail.com'
+                } } />
+            <OfficerCard officer={{
+                name: 'Megan Mai',
+                title: 'Public Relations',
+                image_path:'/src/assets/officers/18-19/IMG_2792.jpg',
+                email: 'acs.at.uh@gmail.com'
+            } } />                
+              <OfficerCard officer={{
+                name: 'Temp',
+                title: 'Tutor Coordinator',
+                image_path:'/src/assets/officers/18-19/IMG_2948.jpg',
+                email: 'acs.at.uh@gmail.com'
+            } } />  
             </div>
         
         </div>

@@ -56,4 +56,4 @@ const Tutors = () => {
     )
 }
 
-export default Tutors
+export default Tutors;

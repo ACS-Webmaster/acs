@@ -1,37 +1,72 @@
 ---
-import { Image } from "astro:assets";
-import pic1 from "../../assets/officers/24-25/president.png"
-import pic2 from "../../assets/officers/24-25/pr.png"
-import pic3 from "../../assets/officers/24-25/academic_chair.png"
-import pic4 from "../../assets/officers/24-25/academic_chair2.jpg"
-import pic5 from "../../assets/officers/24-25/tutor2.jpg"
-import pic6 from "../../assets/officers/24-25/secretary.png"
-import pic7 from "../../assets/officers/24-25/treasurer.png"
-import pic8 from "../../assets/officers/24-25/tutor_coord.png"
-import pic9 from "../../assets/officers/24-25/webmaster.png"
 import Page from "../../layouts/Page.astro"
 import '../../styles/global.css';
 import Footer from "../../components/Footer.astro";
-
+import OfficerCard from "../../components/OfficerCard";
 ---
 <Page title="24-25 Officers">
 
     <div class="p-4">
-        <div class="p-3 border-black border-1 w-min rounded-xl cursor-pointer text bg-[rgb(253,220,128)] hover:bg-[rgb(245,204,92)] "><a href="/#officer">Back</a>  
-        </div>
+        <a href="/#officer"> <div class="p-3 border-black border-1 w-min rounded-xl cursor-pointer text bg-[rgb(253,220,128)] hover:bg-[rgb(245,204,92)] ">Back</div></a>  
         <h1 class="heading">2024-2025 Officers</h1>
         <div class="p-4">
             <div class="p-6 m-2 bg-slate-500 text-center w-32 h-32 sm:w-64 sm:h-64 flex flex-col justify-center text-white drop-shadow-2xl"><h1 class="text-lg sm:text-6xl">2024-2025</h1></div>
                 <div class="grid grid-cols-3 gap-3 m-2">
-                    <Image src={pic1} alt="officer1" class="full-size"/>
-                    <Image src={pic2} alt="officer2" class="full-size"/>
-                    <Image src={pic3} alt="officer2" class="full-size"/>
-                    <Image src={pic4} alt="officer2" class="full-size"/>
-                    <Image src={pic5} alt="officer2" class="full-size"/>
-                    <Image src={pic6} alt="officer2" class="full-size"/>
-                    <Image src={pic7} alt="officer2" class="full-size"/>
-                    <Image src={pic8} alt="officer2" class="full-size"/>
-                    <Image src={pic9} alt="officer2" class="full-size"/>
+                    <OfficerCard officer={{
+                        name: 'Kae Zhang',
+                        title: 'President',
+                        image_path:'/src/assets/officers/24-25/president.png',
+                        email: 'acs.at.uh@gmail.com'
+                    } } />
+                    <OfficerCard officer={{
+                        name: 'Kristen Pham',
+                        title: 'Chemistry Treasurer',
+                        image_path:'/src/assets/officers/24-25/treasurer.png',
+                        email: 'acs.at.uh@gmail.com'
+                    } } />         
+                    <OfficerCard officer={{
+                    name: 'Lily Bonzon',
+                    title: 'Academic Chair',
+                    image_path:'/src/assets/officers/24-25/academic_chair.png',
+                    email: 'acs.at.uh@gmail.com'
+                } } />            
+                     <OfficerCard officer={{
+                        name: 'Hamza Awan',
+                        title: 'Academic Chair',
+                        image_path:'/src/assets/officers/24-25/academic_chair2.jpg',
+                        email: 'acs.at.uh@gmail.com'
+                    } } /> 
+          
+                      <OfficerCard officer={{
+                        name: 'Anthony Dang',
+                        title: 'Secretary',
+                        image_path:'/src/assets/officers/24-25/secretary.png',
+                        email: 'acs.at.uh@gmail.com'
+                    } } /> 
+                       <OfficerCard officer={{
+                        name: 'Ash Moore',
+                        title: 'Secretary',
+                        image_path:'/src/assets/officers/24-25/pr.png',
+                        email: 'acs.at.uh@gmail.com'
+                    } } /> 
+                      <OfficerCard officer={{
+                        name: 'Alia Khan',
+                        title: 'Tutor Coordinator',
+                        image_path:'/src/assets/officers/24-25/tutor_coord.png',
+                        email: 'acs.at.uh@gmail.com'
+                    } } /> 
+                       <OfficerCard officer={{
+                        name: 'Alex Saravia',
+                        title: 'Tutor Coordinator',
+                        image_path:'/src/assets/officers/24-25/tutor2.jpg',
+                        email: 'acs.at.uh@gmail.com'
+                    } } /> 
+                        <OfficerCard officer={{
+                            name: 'Alan Johnson',
+                            title: 'Web Master',
+                            image_path:'/src/assets/officers/24-25/webmaster.png',
+                            email: 'acs.at.uh@gmail.com'
+                        } } /> 
                 </div>
         </div>
         
