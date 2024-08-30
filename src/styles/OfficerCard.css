@@ -101,7 +101,18 @@
 
 @media (max-width: 575px) {
 	.officers .picture {
-		width: 100px;
-		height: 100px;
+		width: 80px;
+		height: 80px;
+	}
+	.officers .picture img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transform: scale(0.8);
+		transition: all 0.5s ease 0s;
+	}
+	.officers:hover .picture img {
+		box-shadow: 0 0 0 10px #FBBA00;
+		transform: scale(0.85);
 	}
 }
