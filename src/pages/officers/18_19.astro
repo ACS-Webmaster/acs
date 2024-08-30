@@ -8,7 +8,6 @@ import pic5 from "../../assets/officers/18-19/IMG_2783.jpg"
 import pic6 from "../../assets/officers/18-19/IMG_2786.jpg"
 import pic7 from "../../assets/officers/18-19/IMG_2789.jpg"
 import pic8 from "../../assets/officers/18-19/IMG_2792.jpg"
-import pic9 from "../../assets/officers/18-19/IMG_2801.jpg"
 import pic10 from "../../assets/officers/18-19/IMG_2948.jpg"
 import Page from "../../layouts/Page.astro"
 import '../../styles/global.css';
@@ -19,10 +18,15 @@ import OfficerCard from "../../components/OfficerCard";
 <Page title="18-19 Officers">
 
     <div class="p-4">
-       <a href="/#officer"> <div class="p-3 border-black border-1 w-min rounded-xl cursor-pointer text bg-[rgb(253,220,128)] hover:bg-[rgb(245,204,92)] ">Back</div></a>  
-        <h1 class="heading">2018-2019 Officers</h1>
+       <a href="/#officer">
+            <button class="border-black border-2 px-4 py-2 rounded-lg bg-[#FBBA00] hover:bg-[rgb(245,204,92)] duration-300 text-l">
+                Back
+            </button>
+        </a>
+       <div class="flex flex-row drop-shadow-2xl">
+        <div class="p-6 mt-4 bg-slate-500 text-center w-32 h-32 sm:w-64 sm:h-64 flex flex-col justify-center text-white shadow-2xl"><h1 class="text-lg sm:text-6xl">2018-2019</h1></div>
+      </div>
         <div class="p-4">
-            <Image src={pic9} alt="officer2" transition:name="18_19" class="w-1/2 drop-shadow-2xl"/>
             <div class="grid grid-cols-3 gap-3 m-2">
                 <OfficerCard officer={{
                     name: 'Aswathy Pillai',
