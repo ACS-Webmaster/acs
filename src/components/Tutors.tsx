@@ -5,20 +5,37 @@ const Tutors = () => {
     const [active, setActive] = useState(0);
     return (    
     <div>
-        {/* <div className='border-[#0057A3] border-t-3 mt-12 mb-10'></div> */}
 
         <h2>Tutors & Schedule</h2>
         <p className="bg-[#FBBA00] w-fit p-1 mb-2">Notice: Please e-mail us at acs.at.uh@gmail.com if you have any concerns or questions. </p>
         <ul className="flex flex-row gap-3">
-            <li className="border-black border-2 p-2 rounded-lg hover:bg-[#0057A3] hover:text-white duration-300">
-            <p onClick={()=>setActive(0)} className='cursor-pointer'>General Chemistry</p>
-            </li>
-            <li className="border-black border-2 p-2 rounded-lg hover:bg-[#0057A3] hover:text-white duration-300">
-            <p onClick={()=>setActive(1)} className='cursor-pointer'>Biochemistry</p>
-            </li>
-            <li className="border-black border-2 p-2 rounded-lg hover:bg-[#0057A3] hover:text-white duration-300">
-            <p onClick={()=>setActive(2)} className='cursor-pointer'>Organic Chemistry</p>
-            </li>
+            {active == 0 ?
+                <li onClick={()=>setActive(0)} className="border-black border-2 p-2 rounded-lg bg-[#0057A3] text-white">
+                    <p className='cursor-pointer'>General Chemistry</p>
+                </li> :
+                <li onClick={()=>setActive(0)}  className="border-black border-2 p-2 rounded-lg hover:bg-[#0057A3] hover:text-white duration-300">
+                    <p onClick={()=>setActive(0)} className='cursor-pointer'>General Chemistry</p>
+                </li>
+            }
+            {active == 1 ?
+                 <li onClick={()=>setActive(1)} className="border-black border-2 p-2 rounded-lg bg-[#0057A3] text-white">
+                    <p className='cursor-pointer'>Biochemistry</p>
+                 </li> :
+                <li onClick={()=>setActive(1)}  className="border-black border-2 p-2 rounded-lg hover:bg-[#0057A3] hover:text-white duration-300">
+                    <p className='cursor-pointer'>Biochemistry</p>
+                </li>
+            }
+            {active == 2 ?
+                 <li onClick={()=>setActive(2)} className="border-black border-2 p-2 rounded-lg bg-[#0057A3] text-white">
+                    <p className='cursor-pointer'>Organic Chemistry</p>
+                </li>:
+                <li onClick={()=>setActive(2)} className="border-black border-2 p-2 rounded-lg hover:bg-[#0057A3] hover:text-white duration-300">
+                    <p className='cursor-pointer'>Organic Chemistry</p>
+                </li>
+            }
+        
+          
+          
         </ul>
         <div className="tab-content" id="myTabContent">
                 <br />

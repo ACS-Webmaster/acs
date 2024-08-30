@@ -1,6 +1,15 @@
 ---
 import Page from "../../layouts/Page.astro"
 import '../../styles/global.css';
+import pic1 from "../../assets/officers/24-25/president.png"
+import pic2 from "../../assets/officers/24-25/pr.png"
+import pic3 from "../../assets/officers/24-25/academic_chair.png"
+import pic4 from "../../assets/officers/24-25/academic_chair2.jpg"
+import pic5 from "../../assets/officers/24-25/tutor2.jpg"
+import pic6 from "../../assets/officers/24-25/secretary.png"
+import pic7 from "../../assets/officers/24-25/treasurer.png"
+import pic8 from "../../assets/officers/24-25/tutor_coord.png"
+import pic9 from "../../assets/officers/24-25/webmaster.png"
 import Footer from "../../components/Footer.astro";
 import OfficerCard from "../../components/OfficerCard";
 ---
@@ -15,56 +24,56 @@ import OfficerCard from "../../components/OfficerCard";
                     <OfficerCard officer={{
                         name: 'Kae Zhang',
                         title: 'President',
-                        image_path:'/src/assets/officers/24-25/president.png',
+                        image: pic1,
                         email: 'acs.at.uh@gmail.com'
                     } } />
                     <OfficerCard officer={{
                         name: 'Kristen Pham',
                         title: 'Chemistry Treasurer',
-                        image_path:'/src/assets/officers/24-25/treasurer.png',
+                        image: pic7,
                         email: 'acs.at.uh@gmail.com'
                     } } />         
                     <OfficerCard officer={{
                     name: 'Lily Bonzon',
                     title: 'Academic Chair',
-                    image_path:'/src/assets/officers/24-25/academic_chair.png',
+                    image: pic3,
                     email: 'acs.at.uh@gmail.com'
                 } } />            
                      <OfficerCard officer={{
                         name: 'Hamza Awan',
                         title: 'Academic Chair',
-                        image_path:'/src/assets/officers/24-25/academic_chair2.jpg',
+                        image: pic4,
                         email: 'acs.at.uh@gmail.com'
                     } } /> 
           
                       <OfficerCard officer={{
                         name: 'Anthony Dang',
                         title: 'Secretary',
-                        image_path:'/src/assets/officers/24-25/secretary.png',
+                        image: pic6,
                         email: 'acs.at.uh@gmail.com'
                     } } /> 
                        <OfficerCard officer={{
                         name: 'Ash Moore',
                         title: 'Secretary',
-                        image_path:'/src/assets/officers/24-25/pr.png',
+                        image: pic2,
                         email: 'acs.at.uh@gmail.com'
                     } } /> 
                       <OfficerCard officer={{
                         name: 'Alia Khan',
                         title: 'Tutor Coordinator',
-                        image_path:'/src/assets/officers/24-25/tutor_coord.png',
+                        image: pic8,
                         email: 'acs.at.uh@gmail.com'
                     } } /> 
                        <OfficerCard officer={{
                         name: 'Alex Saravia',
                         title: 'Tutor Coordinator',
-                        image_path:'/src/assets/officers/24-25/tutor2.jpg',
+                        image: pic5,
                         email: 'acs.at.uh@gmail.com'
                     } } /> 
                         <OfficerCard officer={{
                             name: 'Alan Johnson',
                             title: 'Web Master',
-                            image_path:'/src/assets/officers/24-25/webmaster.png',
+                            image: pic9,
                             email: 'acs.at.uh@gmail.com'
                         } } /> 
                 </div>

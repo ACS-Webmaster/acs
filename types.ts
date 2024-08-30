@@ -1,5 +1,5 @@
 export interface Officer {
-    image_path: string;
+    image: ImageMetadata;
     email: string;
     name: string;
     title: string;

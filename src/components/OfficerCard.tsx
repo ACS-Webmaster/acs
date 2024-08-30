@@ -16,7 +16,7 @@ const OfficerCard: React.FC<officerRequest> = ({
 	return (
 		<div className='officers'>
 			<div className='picture'>
-				<img src={officer.image_path} alt={officer.name} className='rounded-full'/>
+				<img src={officer.image.src} alt={officer.name} className='rounded-full'/>
 
 			</div>
 			<div className='team-content'>
