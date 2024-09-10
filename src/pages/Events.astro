@@ -2,12 +2,51 @@
 import Page from "../layouts/Page.astro"
 import svg5 from '../assets/wave-haikei5.svg?raw'
 import '../styles/global.css'; 
+import EventsCard from "../components/EventsCard";
 ---
 
 <Page title="Events">
-    <div class="h-screen bg-[#0057A3]">
+    <div class="bg-[#0057A3]">
         <div class="p-2 text-white text">
             <h1 class="heading text-black">Events</h1>
+            <h2 class="heading">Upcoming</h2>
+            <div class="grid grid-col1 sm:flex gap-1 mt-2 justify-center">
+                <EventsCard events={{
+                    date: new Date(new Date().getFullYear(), 8, 24),
+                    name: 'General Meeting',
+                    people: 'Dr. Anantha Lakshmi, Research Postdoc at University of Houston',
+                    description: 'Research on organic synthesis of RIPK inhibitors which play a role in understanding autoimmune diseases',
+                    details: null,
+                    link: null
+                } }/>
+                <EventsCard events={{
+                    date: new Date(new Date().getFullYear(), 9, 10),
+                    name: 'General Meeting',
+                    people: 'Brian Price, Vice President of Science & Engineering for Select Chemistry',
+                    description: 'He and his team are responsible for Research & Development, Product Application Support, Analytical Services, Quality Control, and Chemical Engineering in Oil and Gas',
+                    details: null,
+                    link: null
+                } }/>
+                <EventsCard events={{
+                    date: null,
+                    name: 'Graduate School Mentorship Groups',
+                    people: 'Society for the Advancement of Chicanos/Hispanics & Native Americans in STEM at UH',
+                    description: 'Apply to be mentee',
+                    details: ['Get paired with a graduate student in a field of your choice', 'Different levels of mentorship - Ph.D., Masters Thesis & Professional Based, Professional School (Law, Pharma, Dental, etc.)', 'Learn more about the graduate school process and strengthen your application'],
+                    link: "https://docs.google.com/forms/d/e/1FAIpQLSfl_Nsh77Zs_bvNAkL0bgWax-xZ0oQrHQNEf63xh6u7HAryZw/viewform"
+                } }/>
+                <EventsCard events={{
+                    date: null,
+                    name: 'First Generation Mentorship Groups',
+                    people: 'Society for the Advancement of Chicanos/Hispanics & Native Americans in STEM at UH',
+                    description: 'Apply to be mentor',
+                    details: ['Mentor a first year or incoming NSM student', 'Help new Coogs adjust to UH by guiding mentees in your or a similar degree program about how to succeed in the first year at UH', 'Both programs will involve regular check-ins with your mentor/mentee and lunch meetings (food provided) expected commitment of about 5 hours per month'],
+                    link: "https://docs.google.com/forms/d/e/1FAIpQLSdnaw9xCqostaSOGzxcRbHud1L6JKn0pFln33WszQ3TO9KRCg/viewform"
+                } }/>
+            </div>
+               
+
+           
             <h2 class="heading">Event Sign-Up</h2>
             <p class="mb-2">no current events for sign up</p>
             <a href="/Gallery">
