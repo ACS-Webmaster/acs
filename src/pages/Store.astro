@@ -3,20 +3,14 @@ import Page from "../layouts/Page.astro"
 ---
 
 <Page title="Store">
-    <div class="h-screen bg-[#0057A3]">
+    <div class="bg-[#0057A3]">
         <div class="p-2 text-white text">
             <h1 class="heading text-black">ACS Store</h1>
-            <div class="m-5">
-                <ul role="list" class="list-disc">
-                    <li><strong>Carbon paper lab notebooks</strong>: $25</li>
-                    <li><strong>ACS review book</strong>: $25</li>
-                    <li><strong>Carbon paper lab notebooks</strong>: $25</li>
-                    <li><strong>Lab coat</strong>: $20</li>
-                    <li><strong>Goggles (version 1)</strong>: $5</li>
-                    <li><strong>Goggles (version 2)</strong>: $10</li>
-                    <li><strong>Locks</strong>: $5</li>
-
-                </ul>
+            <div class="m-5 sm:hidden">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegkYARE4jNpRZB7PQia2_mXYhy5HWfIYD2cfWBLFa3TUIYAA/viewform?embedded=true" width="400" height="1061" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <div class="m-5 hidden sm:block">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegkYARE4jNpRZB7PQia2_mXYhy5HWfIYD2cfWBLFa3TUIYAA/viewform?embedded=true" width="600" height="1061" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
     </div>
