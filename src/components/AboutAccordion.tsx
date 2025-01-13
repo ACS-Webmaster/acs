@@ -21,7 +21,7 @@ export default function AboutAccordion() {
                 <img src={img1.src} className="rounded-lg" alt="membership"/>
                 </div>
                 <p className="border-b-2 pb-2 mb-2 border-[#FBBA00] font-light"> 
-                If you are interested in becoming a member, <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3gG5_lZOiysjRv9AT0dYQFpi6keaG9Apyo9FpAl2p-uPUnQ/viewform?usp=sf_link" className="underline">click here</a> to sign up!
+                If you are interested in becoming a member, <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3gG5_lZOiysjRv9AT0dYQFpi6keaG9Apyo9FpAl2p-uPUnQ/viewform?usp=sf_link" className="border-2 border-black font-semibold rounded-lg p-1 text-black bg-[rgb(253,220,128)]" target="_blank">click here</a> to sign up!
                 <br />
                 <strong>Semester Chapter Membership: </strong>$25.00
                 <br />

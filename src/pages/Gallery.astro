@@ -4,6 +4,7 @@ import Page from "../layouts/Page.astro"
 import Navbar from '../components/Navbar.astro';
 import MobileNav from '../components/MobileNav';
 import Footer from '../components/Footer.astro';
+import EventsCard from '../components/EventsCard';
 ---
 <div class="h-screen bg-[rgb(0,87,163)]">
 
@@ -15,7 +16,42 @@ import Footer from '../components/Footer.astro';
         <Navbar/>
     </div>       
     <h1 class="title heading sm:p-2 text-white">Event Gallery</h1>
-    <h3 class="heading sm:p-2">...</h3>
+    <div class="grid grid-col1 sm:flex gap-1 mt-2 justify-center">
+
+        <EventsCard events={{
+            date: new Date(new Date().getFullYear(), 9, 24),
+            name: 'Halloween Social',
+            people: 'ACS Room, Lamar Fleming Jr. Bldg., Room 218/220, 6-9 PM',
+            description: 'Come hang out with peers and enjoy food, candy, slime making, halloween movies, and more!',
+            details: null,
+            link: null
+        } }/>
+        <EventsCard events={{
+            date: new Date(new Date().getFullYear(), 9, 10),
+            name: 'National Chemistry Week at the Houston Children’s Museum',
+            people: 'Saturday, 8 AM - 2 PM',
+            description: '1500 Binz St., Houston, TX 77004',
+            details: ['Join ACS Greater Houston in demonstrating the chemistry of photography to young scientists!', 'Different levels of mentorship - Ph.D., Masters Thesis & Professional Based, Professional School (Law, Pharma, Dental, etc.)', 'Learn more about the graduate school process and strengthen your application'],
+            link: null
+        } }/>
+        <EventsCard events={{
+            date: new Date(new Date().getFullYear(), 10, 5),
+            name: 'General Meeting',
+            people: 'Michael Soth, Institute Director of Medicinal Chemistry, MD Anderson Cancer Center',
+            description: 'Presenting his talk of Discovery and development of IACS-6274, a GLS1 inhibitor advancing in clinical trials for the treatment of cancers with specific metabolic vulnerabilities',
+            details: null,
+            link: null
+        } }/>
+        <EventsCard events={{
+            date: new Date(new Date().getFullYear(), 10, 19),
+            name: 'Friendsgiving Potluck',
+            people: 'ACS Room',
+            description: 'Come join us for a night of food and friends to celebrate the end of the semester!',
+            details: null,
+            link: null
+        } }/>
+        
+    </div>
     
 </Page>
 </div>

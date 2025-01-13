@@ -42,28 +42,22 @@ const Tutors = () => {
             {active === 0 ? 
                 <div>
                     <br/>
-                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/1ZyTCgvjc1G_HyFEMvAUld2EtzOXF5ZlOcKjzyfBoOqM/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-                    <br />
-                    <br />
-                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/1JEBF5n4YqbR8_ckRWZPp8qXzfgg_TLQgOn6JWCMsjU0/pubhtml?widget=true&amp;headers=false"></iframe>                    <br />
-                </div>
+                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwaOzeiXP2v06JWkpLingFQPP20aFmMWN_Dtl6SRYzcUXPmTsyE57itfkqIfO_NKLGBk4KKyQXe3ir/pubhtml?widget=true&amp;headers=false"></iframe>                    <br />
+                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSBimAaPb4iBun23Oi6Wcf_3NdH8tqwdNfJ7UtFwV1C3gzgdhZNZM0EpOOXHgQ5lb652qRU_d4N5ND/pubhtml?widget=true&amp;headers=false"></iframe>                </div>
 
             : null}
             {active === 1 ? 
                 <div>
-                    <iframe  width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/1QJEi940c9S7Ak_d6b4h5B-gUkEB5jnjXLRZIO4wV9DY/pubhtml?widget=true&amp;headers=false"></iframe>                    <br />
-                    <br/>
+                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRP2Eg4cqeupAPZ9N2kxha2YAn7Et2IW1ZQbMfGTFpJhF3yO82D8PnCVSbUZJuDH6Y_en46DoASVYnj/pubhtml?widget=true&amp;headers=false"></iframe>                    <br/>
                 </div>
 
             : null}
             {active === 2 ? 
                 <div className="tab-pane fade" id="orgchem" role="tabpanel" aria-labelledby="orgchem-tab">
                     <br />
-                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/1wqkVnSiBri4jI9r_WhwKmjsjbKEBw_-B_kWHXTMp9Mo/pubhtml?widget=true&amp;headers=false"></iframe>                    <br />
-                    <br />
+                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSFBy0IQcuRUp8xtgCKNrqzLqBMz4MVDtxES8cNrl9pL1FsPn1XTKJfzZ626_5ZL0R4ApI7t_RsYW4R/pubhtml?widget=true&amp;headers=false"></iframe>                    <br />
                     <br/>
-                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/1l3NznLGNtGc0zD7sz8AB-snzlkQgQyUKHZvSyyAQAIY/pubhtml?widget=true&amp;headers=false"></iframe>                    <br />
-                </div>
+                    <iframe width="100%" height="400px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTz2-VOIvavSCUInKjQibtAZaQdpvmYbKaTmf8SIVoDRRV5_9Y6e5A5Fr65gqipLJrqm8w_DfHnTdZk/pubhtml?widget=true&amp;headers=false"></iframe>                </div>
             : null}
       
             
