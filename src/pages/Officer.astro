@@ -1,14 +1,13 @@
 ---
 import Page from "../layouts/Page.astro"
 import '../styles/global.css';
-import svg2 from '../assets/wave-haikei4.svg?raw'
 import group18 from "/src/assets/officers/18-19/IMG_2801.jpg";
 ---
 
 <Page title="Officers">
     <h2 class="heading ml-2 mt-8">Officers</h1>
-      <div class="ml-2">
-        If you are interested in becoming an officer, <a href="https://docs.google.com/forms/d/e/1FAIpQLSe551QK9e9poKkMlBFEnhQBTdOukuoQi-ECL9i-JUpdElBoow/viewform" class="border-2 border-black font-semibold rounded-lg p-1 text-black bg-[rgb(253,220,128)]" target="_blank">click here</a> to apply!
+      <div class="ml-2 text-wrap">
+        If you are interested in becoming an officer, <a href="https://docs.google.com/forms/d/e/1FAIpQLSe551QK9e9poKkMlBFEnhQBTdOukuoQi-ECL9i-JUpdElBoow/viewform" class="border-2 border-black font-semibold rounded-lg p-1 text-black bg-[rgb(253,220,128)] text-nowrap" target="_blank">click here</a> to apply!
       </div>
 
     <div class="text m-4">
@@ -41,5 +40,5 @@ import group18 from "/src/assets/officers/18-19/IMG_2801.jpg";
 
 
 </Page>
-<Fragment set:html={svg2}/>
+
 

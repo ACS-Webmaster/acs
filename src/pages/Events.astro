@@ -3,30 +3,20 @@ import Page from "../layouts/Page.astro"
 import svg5 from '../assets/wave-haikei5.svg?raw'
 import '../styles/global.css'; 
 import EventsCard from "../components/EventsCard";
+import svg2 from '../assets/wave-haikei4.svg?raw'
 ---
 
 <Page title="Events">
+    <div class="-mb-2">
+        <Fragment set:html={svg2}/>
+    </div>
     <div class="bg-[#0057A3]">
         <div class="p-2 text-white text">
             <h1 class="heading text-black">Events</h1>
             <h2 class="heading">Upcoming</h2>
             <div class="grid grid-col1 sm:flex gap-1 mt-2 justify-left">
-                <EventsCard events={{
-                    date: null,
-                    name: 'UH-HEART: Basic scope of cardiovascular research',
-                    people: 'AHA',
-                    description: 'Click here to apply',
-                    details: ['$6,000 stipend and funds to travel to a research conference', 'Rising juniors, seniors, and immediate college graduates', 'Priority Deadline: Sunday, February 23rd; Final Deadline: Sunday, March 9th'],
-                    link: "https://ddi.uh.edu/undergraduate-research-programs/uh-heart"
-                } }/>
-                <EventsCard events={{
-                    date: null,
-                    name: 'UH-CURE: Broad-range cardiovascular research',
-                    people: 'NIH and NHLBI',
-                    description: 'Click here to apply',
-                    details: ['Any full-time undergraduate student who has completed at least one year of studies', '$6,000 stipend, funds to travel to a research conference, and housing for on-campus stay for the duration of the program', 'Financial assistance for travel if coming from outside of Houston', 'Priority Deadline: Sunday, February 23rd; Final Deadline: Sunday, March 9th'],
-                    link: "https://ddi.uh.edu/undergraduate-research-programs/uh-cure"
-                } }/>
+                <p class="mb-2">no upcoming events</p>
+
             </div>
                
 
@@ -52,7 +42,7 @@ import EventsCard from "../components/EventsCard";
                 } }/>
             </div>
             <a href="/Gallery">
-                <button class="border-white border-2 w-fit p-2 rounded-lg hover:bg-white hover:text-black duration-300">
+                <button class="border-white border-2 w-fit p-2 rounded-lg hover:bg-white hover:text-black duration-300 mt-5">
                     Past Events
                 </button>
              
